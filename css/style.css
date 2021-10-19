@@ -33,12 +33,21 @@ common css ends
 .main .years-countdown #years{
    font-family: var(--font);
    font-size:124px;
-   writing-mode: sideways-lr;
    background:linear-gradient(blue,red);
    background-clip: text;
+   -ms-background-clip: text;
+   -webkit-background-clip: text;
    color:transparent;
-   -webkit-writing-mode: sideways-lr;
-   -ms-writing-mode: sideways-lr;
+   writing-mode:sideways-lr;
+   -ms-writing-mode:sideways-lr;
+   -webkit-writing-mode:sideways-lr;
+   -o-writing-mode:sideways-lr;
+   -moz-writing-mode:sideways-lr;
+   transform: rotate(-90deg);
+   -webkit-transform: rotate(-90deg);
+   -moz-transform: rotate(-90deg);
+   -ms-transform: rotate(-90deg);
+   -o-transform: rotate(-90deg);
 }
 
 .main .times-countdown{
